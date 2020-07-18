@@ -14,7 +14,7 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         <div className="media-content">
           <p className="title is-4">{login}</p>
           <div className="content">
-            <Link to={`/user/${login}`} className="button">
+            <Link to={`/user/${login}`} className="button is-dark">
               More
             </Link>
           </div>
