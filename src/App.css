@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -41,7 +41,7 @@ img {
 }
 
 /* Utilities */
-.container {
+.container-css {
   max-width: 1100px;
   margin: auto;
   overflow: hidden;
@@ -110,7 +110,7 @@ img {
 }
 
 /* Cards */
-.card {
+.card-css {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
@@ -294,10 +294,6 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
-
 .bg-light,
 .badge-light {
   border: #ccc solid 1px;
@@ -308,7 +304,7 @@ img {
 }
 
 /* Forms */
-input {
+input-css {
   margin: 1.2rem 0;
 }
 
@@ -318,10 +314,10 @@ input {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input-css[type="text"],
+input-css[type="email"],
+input-css[type="password"],
+input-css[type="date"],
 select,
 textarea {
   display: block;
@@ -331,8 +327,8 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type='submit'],
-button {
+input-css[type="submit"],
+button-css {
   font: inherit;
 }
 
@@ -346,8 +342,8 @@ table th {
   background: var(--light-color);
 }
 
-/* Navbar */
-.navbar {
+/* navbar-css */
+.navbar-css {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -358,21 +354,21 @@ table th {
   margin-bottom: 1rem;
 }
 
-.navbar ul {
+.navbar-css-css ul {
   display: flex;
 }
 
-.navbar a {
+.navbar-css a {
   color: #fff;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+.navbar-css a:hover {
   color: var(--light-color);
 }
 
-.navbar .welcome span {
+.navbar-css .welcome span {
   margin-right: 0.6rem;
 }
 
@@ -401,14 +397,18 @@ table th {
     font-size: 1rem;
   }
 
-  /* Navbar */
-  .navbar {
+  /* navbar-css */
+  .navbar-css {
     display: block;
     text-align: center;
   }
 
-  .navbar ul {
+  .navbar-css ul {
     text-align: center;
     justify-content: center;
   }
+}
+
+.btn-hover:hover {
+  color: white !important;
 }

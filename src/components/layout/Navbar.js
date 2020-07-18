@@ -4,25 +4,32 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ icon, title }) => {
   return (
-    <nav className="navbar bg-primary">
-      <h1>
-        <i className={icon} /> {title}
-      </h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+    <nav
+      className="navbar is-black"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="navbar-brand">
+        <i className={icon} />
+        <h2 className="navbar-item">{title}</h2>
+      </div>
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-end">
+          <Link to="/" className="navbar-item">
+            Home
+          </Link>
+          <Link to="/about" className="navbar-item">
+            About
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };
 
 Navbar.defaultProps = {
   title: "Github Finder",
-  icon: "fab fa-github",
+  icon: "navbar-item fab fa-github fa-2x",
 };
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,

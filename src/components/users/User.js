@@ -42,7 +42,7 @@ const User = ({ match }) => {
       ) : (
         <i className="fas fa-times-circle text-danger" />
       )}
-      <div className="card grid-2">
+      <div className="card-css grid-2">
         <div className="all-center">
           <img
             src={avatar_url}
@@ -50,17 +50,19 @@ const User = ({ match }) => {
             alt=""
             style={{ width: "150px" }}
           />
-          <h1>{name}</h1>
-          <p>Location: {location}</p>
+          <h1 className="title">{name}</h1>
+          <p className="subtitle">Location: {location}</p>
         </div>
         <div>
           {bio && (
             <Fragment>
-              <h3>Bio</h3>
+              <h3>
+                <strong>Bio</strong>
+              </h3>
               <p>{bio}</p>
             </Fragment>
           )}
-          <a href={html_url} className="btn btn-dark my-1">
+          <a href={html_url} className="btn btn-dark my-1 btn-hover">
             Visit Github profile
           </a>
           <ul>
@@ -88,7 +90,7 @@ const User = ({ match }) => {
           </ul>
         </div>
       </div>
-      <div className="card text-center">
+      <div className="card-css text-center">
         <div className="badge badge-primary">Followers: {followers}</div>
         <div className="badge badge-success">Following: {following}</div>
         <div className="badge badge-danger">Public Repos: {public_repos}</div>

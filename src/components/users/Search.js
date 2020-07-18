@@ -17,26 +17,29 @@ const Search = () => {
   };
   const onChange = (e) => setText(e.target.value);
   return (
-    <div>
-      <form onSubmit={onSubmit} className="form">
+    <div
+      className="container is-fluid has-text-centered"
+      style={{ paddingTop: "1rem" }}
+    >
+      <form onSubmit={onSubmit} className="field is-inline-flex">
         <input
           type="text"
           name="text"
           placeholder="Search users..."
+          className="input"
           value={text}
           onChange={onChange}
+          style={{ marginRight: "1rem" }}
         />
         <input
           type="submit"
           value="Search"
-          className="btn btn-dark btn-block"
+          className="button"
+          style={{ marginRight: "1rem" }}
         />
       </form>
       {githubContext.users.length > 0 && (
-        <button
-          className="btn btn-light btn-block"
-          onClick={githubContext.clearUsers}
-        >
+        <button className="button is-info" onClick={githubContext.clearUsers}>
           Clear
         </button>
       )}

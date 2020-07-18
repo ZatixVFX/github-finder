@@ -11,6 +11,7 @@ import NotFound from "./components/pages/NotFound";
 import GithubState from "./context/github/GithubState";
 import AlertState from "./context/alert/AlertState";
 import "./App.css";
+import "../src/bulma-0.9.0/css/bulma.css";
 
 const App = () => {
   return (
